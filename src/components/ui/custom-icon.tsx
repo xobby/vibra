@@ -27,7 +27,7 @@ export function CustomIcon({
 }: CustomIconProps): JSX.Element {
   const Icon = Icons[iconName];
 
-  return <i className={cn(className, 'block')}>{Icon}</i>;
+  return <i className={cn(className, 'block')}><Icon className='h-full w-full' /></i>;
 }
 
 function VibraIcon({ className }: IconProps): JSX.Element {
